@@ -2,7 +2,6 @@
 /**
  *  main - Entry point
  *
- *  Description: Print the lowercase alphabet
  *  Return: 0
  */
 int main(void)
