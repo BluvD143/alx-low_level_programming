@@ -15,7 +15,7 @@ for (i = 0; i <= n; i++)
 _putchar('0');
 for (j = 1; j <= n; j++)
 {
-prod = (i * J);
+prod = i * J;
 if (j != 0)
 {
 _putchar(',');
