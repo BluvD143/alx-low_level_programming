@@ -6,19 +6,19 @@
  */
 void print_times_table(int n)
 {
-int num, mult, prod;
+int i, j, prod;
 
 if (!(n >= 0 && n <= 15))
 {
-for (num = 0; num <= n; num++)
+for (i = 0; i <= n; i++)
 {
 _putchar('0');
-for (mult = 1; mult <= n; mult++)
+for (j = 1; j <= n; j++)
 {
 _putchar(',');
 _putchar(' ');
 
-prod = num * mult;
+prod = (i * j);
 
 if (prod <= 99)
 _putchar(' ');
