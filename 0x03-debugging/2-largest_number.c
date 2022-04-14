@@ -16,15 +16,14 @@ if (a >= b && a >= c)
 {
 lagest = a;
 }
-else if (b >= a && b >= c)
+if (b >= a && b >= c)
 {
 largest = b;
 }
-else
+else (c >= a && c >= b)
 {
 largest = c;
 }
 
 return (largest);
 }
-
