@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- *
  * _strlen - length of string
- * @s: char
+ * @s: a pointer to an int that will be changed/updated
  *
  * Return: int
  */
