@@ -7,7 +7,7 @@
  * Return: void
  */
 
-void rev-string(char *s)
+void rev_string(char *s)
 {
 	int i, j;
 	char a[500];
