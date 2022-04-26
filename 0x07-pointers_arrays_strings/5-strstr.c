@@ -2,7 +2,7 @@
 
 /**
  * _strstr - this returns pointer to first char of matching substring
- * @haystack: string to find substring in
+ * @haystack: string to search substring in
  * @needle: substring to find match of
  *
  * Return: pointer to first char of matching substring
