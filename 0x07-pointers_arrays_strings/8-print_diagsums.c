@@ -4,7 +4,7 @@
 /**
  * print_diagsums - prints sum of two diagnols of a square matrix
  * @a: input square array
- * @size: size of the dimension of the array
+ * @size: size of the dimensions of the array
  *
  * Return: void
  */
