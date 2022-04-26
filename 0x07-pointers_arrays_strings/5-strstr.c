@@ -3,8 +3,7 @@
 /**
  * _strstr - this locates a substring substring
  * @haystack: string to find the first ossurence of a substring 
- * @needle: substring to find match of
- *
+ * @needle: substring to find match for
  * Return: pointer to the beginning of a located substring
  */
 
