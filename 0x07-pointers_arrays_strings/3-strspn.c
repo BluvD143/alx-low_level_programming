@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strspn - this gets the length of a prefix substring
+ * _strspn - this gets the length of a prefix substring.
  * @s: input string to look for substring
  * @accept: characters that prefix substring must include
  *
