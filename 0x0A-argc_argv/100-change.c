@@ -1,71 +1,55 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <ctype.h>
 
-
-/**
- * _isnumber - checks if string is a number
- * @s: string
- *
- * Return: On success 1.
- * If not a number, 0 is returned.
- */
-int _isnumber(char *s)
-{
-	int i, check, d;
-
-	i = 0, d = 0, check = 1;
-	if (*s == '-')
-		i++;
-	for (; *(s + i) != 0; i++)
-	{
-		d = isdigit(*(s + i));
-		if (d == 0)
-		{
-			check = 0;
-			break;
-		}
-	}
-	return (check);
-}
 /**
  * main - prints the minimum number of coins to make change
- * @argc: Counts the number of parameters that go into main
- * @argv: Pointer of array of pointers containing strings entering main
+ * @argc: is the number of arguments
+ * @argv: is the array of arguments
  *
- * Return: Always 0
+ * Return: 0
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int m, n, coins, cents, d;
-	int c[5] = {25, 10, 5, 2, 1};
+	int value, c;
 
-	n = 1, m = 0, coins = 0;
-	if (argc == 2)
+	c = 0;
+	if (argc != 2)
 	{
-		if (_isnumber(argv[1]))
-		{
-			n = 0, cents = atoi(argv[1]);
-			if (cents >= 0)
-			{
-				while (cents != 0)
-				{
-					d = cents / c[j];
-					if (d == 0)
-					{
-						m++;
-					}
-					else
-					{
-						coins += d;
-						cents -= (d * c[m]);
-					}
-				}
-			}
-		}
+		printf("Error\n");
+		return (1);
 	}
-	if (n == 0)
-		printf("%i\n", coins);
-	else
-		printf("%s\n", "Error");
-	return (n);
+	value = atoi(argv[1]);
+	if (value < 0)
+	{
+		printf("%d\n", 0);
+		return (0);
+	}
+	if (value % 25 >= 0)
+	{
+		c += value / 25;
+		value = value % 25;
+	}
+	if (value % 10 >= 0)
+	{
+		c += value / 10;
+		value = value % 10;
+	}
+	if (value % 5 >= 0)
+	{
+		c += value / 5;
+		value = value % 5;
+	}
+	if (value % 2 >= 0)
+	{
+		c += value / 2;
+		value = value % 2;
+	}
+	if (value % 1 >= 0)
+	{
+		c += value / 1;
+	}
+	printf("%d\n", c);
+	return (0);
+}
