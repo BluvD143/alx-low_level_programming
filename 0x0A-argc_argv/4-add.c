@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
 /**
  * _isnumber - checks if string is a number
@@ -28,7 +29,6 @@ int _isnumber(char *s)
 	}
 	return (check);
 }
-
 /**
  * main - a program that adds positive numbers.
  * @argc: Counts the number of parameters that go into main
