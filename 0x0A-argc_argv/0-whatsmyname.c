@@ -1,5 +1,4 @@
-#include "main.h"
-#include <stlib.h>
+#include <stdio.h>
 
 /**
  * main - is a program that prints its name
