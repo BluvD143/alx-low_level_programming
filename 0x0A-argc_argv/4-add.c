@@ -37,9 +37,9 @@ int _isnumber(char *s)
  */
 int main(int argc, char **argv)
 {
-	int i, n, ex;
+	int i, n, t;
 
-	ex = 0, n = 0;
+	t = 0, n = 0;
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
@@ -47,12 +47,12 @@ int main(int argc, char **argv)
 			if (_isnumber(argv[i]))
 				n += atoi(argv[i]);
 			else
-				ex = 1;
+				t = 1;
 		}
 	}
-	if (ex == 0)
+	if (t == 0)
 		printf("%i\n", n);
 	else
 		printf("%s\n", "Error");
-	return (ex);
+	return (t);
 }
