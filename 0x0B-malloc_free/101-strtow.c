@@ -33,8 +33,7 @@ int count(char *s)
 char **strtow(char *str)
 {
 	char **words;
-	int kit, i, j, k, l, x;
-  x = 0;
+	int kit, i, j, k, l, x = 0;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
