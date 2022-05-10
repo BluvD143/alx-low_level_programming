@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _memset -  this initializes n bytes of memory to x
+ * _memset - this initializes n bytes of memory to x
  * @ptr: initial adress
  * @x: variable to initialize with
  * @n: number of bytes to initialize
@@ -20,7 +20,7 @@ char *_memset(char *ptr, int x, unsigned int n)
 }
 
 /**
- * _calloc -  this allocates memory using malloc and initializes in 0
+ * _calloc - this allocates memory using malloc and initializes in 0
  * @nmemb: number of elements of array to allocate
  * @size: size of elements
  *
