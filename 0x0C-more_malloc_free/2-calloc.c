@@ -20,7 +20,6 @@ char *_memset(char *ptr, int x, unsigned int n)
 
 	return (ptr);
 }
-
 /**
  * _calloc - this allocates memory for an array using malloc 
  * @nmemb: number of elements of array to allocate
@@ -32,7 +31,6 @@ char *_memset(char *ptr, int x, unsigned int n)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *p;
-
 
 	if (nmemb == 0 || size == 0)
 		return (0);
