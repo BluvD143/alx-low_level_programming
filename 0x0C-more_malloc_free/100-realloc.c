@@ -10,6 +10,7 @@
  *
  * Return: Returns memory copied
  */
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
@@ -18,7 +19,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		dest[i] = src[i];
 	return (dest);
 }
-
 /**
  * _realloc - this reallocates a memory block using malloc and free
  * @ptr: pointer to modify
@@ -27,6 +27,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
  *
  * Return: Pointer to reallocated memory
  */
+
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *ptr2;
