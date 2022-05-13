@@ -3,8 +3,9 @@
 /**
  * struct op - is the structure op
  * @op: operator input
- * @f: function pointer
+ * @f: function pointer associated
  */
+
 typedef struct op
 {
 	char *op;
