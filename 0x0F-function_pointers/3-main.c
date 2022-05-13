@@ -3,13 +3,11 @@
 #include "3-calc.h"
 
 /**
- * main - performs simple operations
- * @argc: argument count
+ * main - this performs simple operations
+ * @argc: number of argument count
  * @argv: argument vector
- *
- * Return: 0 
+ * Return: 0 if no errors
  */
-
 int main(int argc, char *argv[])
 {
 	register int a, b;
