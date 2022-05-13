@@ -6,8 +6,10 @@
  * main - this performs simple operations
  * @argc: number of argument count
  * @argv: argument vector
- * Return: 0 if no errors
+ *
+ * Return: 0
  */
+
 int main(int argc, char *argv[])
 {
 	register int a, b;
