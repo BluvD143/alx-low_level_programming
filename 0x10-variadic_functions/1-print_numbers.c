@@ -3,11 +3,13 @@
 #include <stdarg.h>
 
 /**
- * print_numbers - Prints numbers, followed by a new line.
- * @separator: The string to be printed between numbers.
+ * print_numbers - this prints numbers, followed by a new line.
+ * @separator: this is the string to be printed between numbers.
  * @n: The number of integers passed to the function.
- * @...: A variable number of numbers to be printed.
+ *
+ * Return": numbers entered as arg
  */
+
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list nums;
