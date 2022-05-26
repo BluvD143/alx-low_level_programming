@@ -1,7 +1,8 @@
 #include "lists.h"
 #include <stdlib.h>
+
 /**
- * free_listint - is a function that frees the memory of a list
+ * free_listint - frees the memory of a list
  * @head: is the pointer to the start of the list
  * Return: void
  */
