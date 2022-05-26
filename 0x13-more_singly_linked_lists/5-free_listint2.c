@@ -2,19 +2,22 @@
 #include <stdlib.h>
 
 /**
- * free_listint - frees the memory of a list
- * @head: is the pointer to the start of the list
+ * free_listint2 - frees the memory of a list
+ * @head: is the pointer to the address of the list
  * Return: void
  */
-void free_listint(listint_t *head)
+void free_listint2(listint_t **head)
 {
 	listint_t *rice;
+	
+	if (head == NULL)
+		return;
 
-	while (head)
+	while (*head)
 	{
-		rice = head->next;
-		free(head);
-		head = rice;
+		rice = (*head)->next;
+		free(*head);
+		*head = rice;
 	}
 	
 	head = NULL;
