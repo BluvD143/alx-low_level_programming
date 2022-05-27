@@ -14,32 +14,32 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *new, *copy = *head;
+	listint_t *rice, *garri = *head;
 	unsigned int node;
 
-	new = malloc(sizeof(listint_t));
-	if (new == NULL)
+	rice = malloc(sizeof(listint_t));
+	if (rice == NULL)
 		return (NULL);
 
-	new->n = n;
+	rice->n = n;
 
 	if (idx == 0)
 	{
-		new->next = copy;
-		*head = new;
-		return (new);
+		rice->next = garri;
+		*head = rice;
+		return (rice);
 	}
 
 	for (node = 0; node < (idx - 1); node++)
 	{
-		if (copy == NULL || copy->next == NULL)
+		if (garri == NULL || garri->next == NULL)
 			return (NULL);
 
-		copy = copy->next;
+		garri = garri->next;
 	}
 
-	new->next = copy->next;
-	copy->next = new;
+	rice->next = garri->next;
+	garri->next = rice;
 
-	return (new);
+	return (rice);
 }
