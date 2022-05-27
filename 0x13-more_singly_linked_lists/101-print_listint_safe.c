@@ -7,38 +7,38 @@
  */
 size_t looped_listint_len(const listint_t *head)
 {
-	const listint_t *temp1, *temp2;
+	const listint_t *rice, *garri;
 	size_t s = 1;
 
 	if (head == NULL || head->next == NULL)
 		return (0);
 
-	temp1 = head->next;
-	temp2 = (head->next)->next;
+	rice = head->next;
+	garri = (head->next)->next;
 
-	while (temp2)
+	while (garri)
 	{
-		if (temp1 == temp2)
+		if (rice == garri)
 		{
-			temp1 = head;
-			while (temp1 != temp2)
+			rice = head;
+			while (rice != garri)
 			{
 				s++;
-				temp1 = temp1->next;
-				temp2 = temp2->next;
+				rice = rice->next;
+				garri = garri->next;
 			}
 
-			temp1 = temp1->next;
-			while (temp1 != temp2)
+			rice = rice->next;
+			while (rice != garri)
 			{
 				s++;
-				temp1 = temp1->next;
+				rice = rice->next;
 			}
 
 			return (s);
 		}
-		temp1 = temp1->next;
-		temp2 = (temp2->next)->next;
+		rice = rice->next;
+		garri = (garri->next)->next;
 	}
 	return (0);
 }
