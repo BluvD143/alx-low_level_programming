@@ -1,9 +1,11 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
-  * main - is a function that copies one file to another
-  * @argc: number of argument
-  * @argv: array of arguments
+  * main - this function copies one file to another
+  * @argc: this is the number of argument to the program
+  * @argv: this is an array of pointers to the arguments
   *
   * Return: 0
   */
