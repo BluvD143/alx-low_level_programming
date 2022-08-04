@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 /*
  * File: 5-hash_table_print.c
  * 
 */
 
 #include "hash_tables.h"
+=======
+#include "./hash_tables.h"
+>>>>>>> 5303c5b94fede8ec6e3f29dca641bade28feb4fd
 
 /**
  * hash_table_print - Prints a hash table.
